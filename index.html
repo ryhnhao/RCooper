@@ -96,17 +96,6 @@
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- Video Link. -->
-              <!-- <span class="link-block">
-                <a href="https://youtu.be/Wb2s1arYCoA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span> -->
-              <!-- Code Link. -->
               <span class="link-block">
                 <a href="https://github.com/ryhnhao/RCooper"
                    class="external-link button is-normal is-rounded is-dark">
@@ -126,7 +115,6 @@
                   <span>Data</span>
                   </a>
             </div>
-
           </div>
         </div>
       </div>
@@ -170,51 +158,16 @@
           <p>
             The value of roadside perception, which could extend the boundaries of autonomous driving and traffic management, 
             has gradually become more prominent and acknowledged in recent years. However, existing roadside perception 
-            approaches only focus on the single-infrastructure sensor system, which cannot realize a comprehensive understanding
-             of a traffic area because of the limited sensing range and blind spots. Orienting high-quality roadside perception, 
-             we need <b>R</b>oadside <b>Coo</b>perative <b>Per</b>ception <b><i>(RCooper)</i></b> to achieve practical 
-             area-coverage roadside perception for restricted traffic areas. Rcooper has its own domain-specific challenges, 
-             but further exploration is hindered due to the lack of datasets. We hence release the first real-world, 
-             large-scale RCooper dataset to bloom the research on practical roadside cooperative perception, including detection 
-             and tracking. The manually annotated dataset comprises 50k images and 30k point clouds, including two representative 
-             traffic scenes (i.e., intersection and corridor). The constructed benchmarks prove the effectiveness of roadside 
-             cooperation perception and demonstrate the direction of further research.
+            approaches only focus on the single-infrastructure sensor system, which cannot realize a comprehensive understanding 
+            of a traffic area because of the limited sensing range and blind spots. Orienting high-quality roadside perception, 
+            we need <b>R</b>oadside <b>Coo</b>perative <b>Per</b>ception <b><i>(RCooper)</i></b> to achieve practical 
+            area-coverage roadside perception for restricted traffic areas. Rcooper has its own domain-specific challenges, 
+            but further exploration is hindered due to the lack of datasets. We hence release the first real-world, 
+            large-scale RCooper dataset to bloom the research on practical roadside cooperative perception, including detection 
+            and tracking. The manually annotated dataset comprises 50k images and 30k point clouds, including two representative 
+            traffic scenes (i.e., intersection and corridor). The constructed benchmarks prove the effectiveness of roadside 
+            cooperation perception and demonstrate the direction of further research.
           </p>
-          <div class="columns is-centered has-text-centered">
-            <img src="assets/images/teaser.jpg"
-                 alt="Teaser."/>
-          </div>
-        </div>
-        <br>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- <section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-centered">
-        <h2 class="title is-3">Framework</h2>
-        <div class="content has-text-justified">
-          <p>
-            To address complex or abstract user commands effectively, <b><i>ChatSim</i></b> adopts a large language model 
-            (LLM)-based multi-agent collaboration framework. The key idea is to exploit multiple LLM agents, 
-            each with a specialized role, to decouple an overall simulation demand into specific editing tasks, 
-            thereby mirroring the task division and execution typically founded in the workflow of a human-operated 
-            company. This workflow offers two key advantages for scene simulation. First, LLM agents' ability to 
-            process human language commands allows for intuitive and dynamic editing of complex driving scenes, 
-            enabling precise adjustments and feedback. Second, the collaboration framework enhances simulation 
-            efficiency and accuracy by distributing specific editing tasks, ensuring improved task completion rates.
-          </p>
-          <br>
-          <div class="columns is-centered has-text-centered">
-            <img src="assets/images/method.jpg"
-                 alt="Method."/>
-          </div>
-        </div>
-        <br>
         </div>
       </div>
     </div>
@@ -223,39 +176,43 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-
-    <div class="column is-full-width">
-
-      <div class="content">
-        <h2 class="title is-3">Foreground Rendering</h2>
-        <p>
-          ChatSim adopts a <b>novel multi-camera lighting estimation</b>. With predicted environment lighting, we use 
-          Blender to render the scene-consistent foreground objects.
-        </p>
-        <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-          <source src="assets/videos_chatsim/foreground_rendering_down2.mp4"
-                  type="video/mp4">
-        </video>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-centered">
+        <h2 class="title is-3">Our contribution</h2>
+        <div class="content has-text-justified">
+          <p>
+            The first real-world, large-scale dataset, RCooper, is released to bloom research on roadside cooperative 
+            perception for practical applications. All the frames and scenes are captured in real-world scenarios.
+          </p>
+          <br>
+          <p>
+            More than 50k images and 30k point clouds manually annotated with 3D bounding boxes and trajectories for ten 
+            semantic classes are provided in our RCooper, which enables the training and evaluation of roadside cooperative 
+            perception approaches in real-world scenarios.
+          </p>
+          <br>
+          <p>
+            Two cooperative perception tasks, including 3D object detection and tracking, are introduced, and comprehensive 
+            benchmarks with SOTA methods are reported. The results show the effectiveness of roadside cooperation and 
+            demonstrate the direction of further research.
+          </p>
+          <img src="assets/demo/ad-coop.png" width="700" alt="" class="img-responsive" style="text-align: center">
+          <p style="text-align: center; font-size: x-small;">
+            Independent roadside 3D perception (red point clouds) is limited by sensing range and blind spots. 
+            (a) The infrastructure-side cooperation can effectively extend the sensing range to cover the whole corridor scene, 
+            and the observation from multiple views can weaken the impact of occlusion in the complex intersection scene. 
+            (b) The area under the infrastructure is the camera's blind spot, which is perceptible from the adjacent 
+            infrastructure's camera.
+          </p>
+          <img src="assets/demo/compare.png" width="700" alt="" class="img-responsive" style="text-align: center">
+          <p style="text-align: center; font-size: x-small;">
+            Comparisons among the representative public perception dataset for road systems.
+          </p>
+        </div>
       </div>
-
-      <div class="content">
-        <h2 class="title is-3">Background Rendering</h2>
-        <p>
-          ChatSim introduces an innovative multi-camera radiance field approach to tackle the challenges 
-          of <b>inaccurate poses</b> and <b>inconsistent exposures</b> among surrounding cameras in autonomous vehicles. 
-          This method enables the rendering of ultra-wide-angle images that exhibit consistent brightness across the entire image.
-        </p>
-        <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-          <source src="assets/videos_chatsim/background_rendering1_down2.mp4"
-                  type="video/mp4">
-        </video>
-      </div>
-
     </div>
-
   </div>
-</section> -->
-
+</section>
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
