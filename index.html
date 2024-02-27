@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="RCooper: A Real-world Large-scale Dataset for Roadside Cooperative Perception">
+  <meta name="keywords" content="RCooper, Cooperative Perception, Roadside Perception, Real-world Large-scale Dataset">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RCooper: A Real-world Large-scale Dataset for Roadside Cooperative Perception</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/bulma.min.css">
+  <link rel="stylesheet" href="assets/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="assets/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="assets/js/fontawesome.all.min.js"></script>
+  <script src="assets/js/bulma-carousel.min.js"></script>
+  <script src="assets/js/bulma-slider.min.js"></script>
+  <script src="assets/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">RCooper: A Real-world Large-scale Dataset for Roadside Cooperative Perception</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://ry-hao.top/">Ruiyang Hao</a><sup>1<b>†</b></sup>,</span>
+            <span class="author-block">
+              <a href="https://leofansq.github.io/">Siqi Fan</a><sup>1<b>†</b></sup>,</span>
+            <span class="author-block">
+              <a href="https://dblp.org/pid/350/9258.html">Yingru Dai</a><sup>1,2</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/zhenlinzhangtim/">Zhenlin Zhang</a><sup>3</sup>,</span><br>
+            <span class="author-block">
+              <a href="">Chenxi Li</a><sup>3</sup>,</span>
+            <span class="author-block">
+              <a href="">Yuntian Wang</a><sup>3</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=JW4F5HoAAAAJ">Haibao Yu</a><sup>1,4</sup></span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=Kiz73xwAAAAJ">Wenxian Yang</a><sup>1</sup></span>
+            <span class="author-block">
+              <a href="https://air.tsinghua.edu.cn/en/info/1012/1219.htm">Jirui Yuan</a><sup>1</sup></span>
+            <span class="author-block">
+              <a href="https://air.tsinghua.edu.cn/en/info/1046/1192.htm">Zaiqing Nie</a><sup>1<b>*</b></sup></span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            † denotes equal contribution.
+            <br>
+            * denotes corresponding author.
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup> Institute for AI Industry Research (AIR), Tsinghua University,</span>
+            <span class="author-block"><sup>2</sup> Department of Electronic Engineering, Tsinghua University,</span>
+            <span class="author-block"><sup>3</sup> China Automotive Innovation Corporation,</span>
+            <span class="author-block"><sup>4</sup> The University of Hong Kong</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://github.com/ryhnhao/RCooper"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://youtu.be/Wb2s1arYCoA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/ryhnhao/RCooper"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://github.com/ryhnhao/RCooper"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <h2 class="subtitle">
+          <b> Dataset Demos </b>
+        </h2>
+        <div class="hero-body">
+          <img src="assets/demo/dataset_demo1.gif" width="400" alt="" class="img-responsive">
+          <img src="assets/demo/dataset_demo3.gif" width="400" alt="" class="img-responsive">
+          <h2 class="subtitle has-text-centered">
+            <i>Demos for Corridor Scenes</i>
+          </h2>
+        </div>
+        <div class="hero-body">
+          <img src="assets/demo/dataset_demo2.gif" width="400" alt="" class="img-responsive">
+          <img src="assets/demo/dataset_demo4.gif" width="400" alt="" class="img-responsive">
+          <h2 class="subtitle has-text-centered">
+            <i>Demos for Intersection Scenes</i>
+          </h2>
+        </div>
+      </div>
+    </section> 
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The value of roadside perception, which could extend the boundaries of autonomous driving and traffic management, 
+            has gradually become more prominent and acknowledged in recent years. However, existing roadside perception 
+            approaches only focus on the single-infrastructure sensor system, which cannot realize a comprehensive understanding
+             of a traffic area because of the limited sensing range and blind spots. Orienting high-quality roadside perception, 
+             we need <b>R</b>oadside <b>Coo</b>perative <b>Per</b>ception <b><i>(RCooper)</i></b> to achieve practical 
+             area-coverage roadside perception for restricted traffic areas. Rcooper has its own domain-specific challenges, 
+             but further exploration is hindered due to the lack of datasets. We hence release the first real-world, 
+             large-scale RCooper dataset to bloom the research on practical roadside cooperative perception, including detection 
+             and tracking. The manually annotated dataset comprises 50k images and 30k point clouds, including two representative 
+             traffic scenes (i.e., intersection and corridor). The constructed benchmarks prove the effectiveness of roadside 
+             cooperation perception and demonstrate the direction of further research.
+          </p>
+          <div class="columns is-centered has-text-centered">
+            <img src="assets/images/teaser.jpg"
+                 alt="Teaser."/>
+          </div>
+        </div>
+        <br>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-centered">
+        <h2 class="title is-3">Framework</h2>
+        <div class="content has-text-justified">
+          <p>
+            To address complex or abstract user commands effectively, <b><i>ChatSim</i></b> adopts a large language model 
+            (LLM)-based multi-agent collaboration framework. The key idea is to exploit multiple LLM agents, 
+            each with a specialized role, to decouple an overall simulation demand into specific editing tasks, 
+            thereby mirroring the task division and execution typically founded in the workflow of a human-operated 
+            company. This workflow offers two key advantages for scene simulation. First, LLM agents' ability to 
+            process human language commands allows for intuitive and dynamic editing of complex driving scenes, 
+            enabling precise adjustments and feedback. Second, the collaboration framework enhances simulation 
+            efficiency and accuracy by distributing specific editing tasks, ensuring improved task completion rates.
+          </p>
+          <br>
+          <div class="columns is-centered has-text-centered">
+            <img src="assets/images/method.jpg"
+                 alt="Method."/>
+          </div>
+        </div>
+        <br>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="column is-full-width">
+
+      <div class="content">
+        <h2 class="title is-3">Foreground Rendering</h2>
+        <p>
+          ChatSim adopts a <b>novel multi-camera lighting estimation</b>. With predicted environment lighting, we use 
+          Blender to render the scene-consistent foreground objects.
+        </p>
+        <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+          <source src="assets/videos_chatsim/foreground_rendering_down2.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+
+      <div class="content">
+        <h2 class="title is-3">Background Rendering</h2>
+        <p>
+          ChatSim introduces an innovative multi-camera radiance field approach to tackle the challenges 
+          of <b>inaccurate poses</b> and <b>inconsistent exposures</b> among surrounding cameras in autonomous vehicles. 
+          This method enables the rendering of ultra-wide-angle images that exhibit consistent brightness across the entire image.
+        </p>
+        <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+          <source src="assets/videos_chatsim/background_rendering1_down2.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+
+    </div>
+
+  </div>
+</section> -->
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{hao2024rcooper,
+      title={RCooper: A Real-world Large-scale Dataset for Roadside Cooperative Perception},
+      author={Hao, Ruiyang and Fan, Siqi and Dai, Yingru and Zhang, Zhenlin and Li, Chenxi and Wang, Yuntian and Yu, Haibao and Yang, Wenxian and Jirui, Yuan and Nie, Zaiqing},
+      booktitle={The IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR)},
+      year={2024}
+    }</code></pre>
+  </div>
+</section>
+
+</body>
+</html>
