@@ -2,11 +2,8 @@
 
 Once this repo serves as the official implementation of CVPR2024 paper. "RCooper: A Real-world Large-scale Dataset for Roadside Cooperative Perception".
 
-Now the repo has been tranfer to https://github.com/AIR-THU/DAIR-RCooper. The full codebase will be released there soon.
+Now the repo has been tranfer to https://github.com/AIR-THU/DAIR-RCooper. The full codebase bas been released there soon.
 
-This repo will be deleted if the formal codebase is released.
+The arxiv paper is published [here](https://arxiv.org/abs/2403.10145).
 
 Thanks for your attention to our work.
-
-## Data Download
-Please check the bottom of this page [website](https://www.t3caic.com/qingzhen/) to download the data.
